@@ -25,4 +25,26 @@ public class CalculatorTest {
         int result = calculator.minus(4, 6);
         assertEquals(expected, result);
     }
+
+    @Test
+    public void minusTest2() {
+        int expected = -5;
+        int result = calculator.minus(0, 5);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void timesTest() {
+        int expected = 14;
+        int result = calculator.times(7, 2);
+        assertEquals(expected, result);
+    }
+
+    @Test
+    public void timesTest2() {
+        int expected = 75;
+        int result = calculator.times(25, 3);
+        assertEquals(expected, result);
+    }
+
 }
